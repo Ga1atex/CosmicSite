@@ -282,3 +282,71 @@ body {
   font-size: 12px;
   line-height: 14px;
 }
+
+.how-to {
+  background-image: url(../images/howto-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.how-to__box {
+  text-align: center;
+}
+
+.how-to__box circle,
+.how-to__box text,
+.how-to__box foreignObject {
+  transition: all .5s;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.how-to__box g:hover circle {
+  r: 20px;
+  fill: #036CCA;
+}
+
+.how-to__box g:hover text {
+  fill: #036CCA;
+  font-size: 36px;
+}
+
+.how-to__box g:hover foreignObject {
+  color: #036CCA;
+  font-size: 22px;
+}
+
+foreignObject {
+  text-align: left;
+}
+
+.to-book {
+  background-image: url(../images/guy-on-the-moon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+}
+
+.to-book__inner {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: baseline; */
+}
+
+.to-book__text {
+  width: 165px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 100px;
+  margin-right: 52px;
+  margin-left: auto;
+  /* margin: 100px 52px 0 auto; */
+}
+
+.to-book__text + .to-book__text {
+  margin-left: 0;
+  margin-right: 0;
+}
