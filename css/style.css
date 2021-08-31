@@ -59,7 +59,7 @@ body {
 
 .header {
   background-image: url(../images/header-bg.jpg);
-  background-position: center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -333,7 +333,6 @@ foreignObject {
 .to-book__inner {
   display: flex;
   justify-content: space-between;
-  /* align-items: baseline; */
 }
 
 .to-book__text {
@@ -349,4 +348,241 @@ foreignObject {
 .to-book__text + .to-book__text {
   margin-left: 0;
   margin-right: 0;
+}
+
+.info {
+  background-image: url(../images/special-offer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+.special-offer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.special-offer__item {
+  width: 500px;
+}
+
+.special-offer__item-box {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 25px;
+  padding: 40px 75px;
+  text-align: center;
+}
+
+.special-offer__item-text {
+  width: 236px;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 auto;
+  padding: 0 10px;
+  
+}
+
+.special-offer__item-text span {
+  color: #CB0E0E;
+}
+
+.special-offer__old-price {
+  text-align: right;
+  font-size: 14px;
+  line-height: 17px;
+  color: #E5E5E5;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.special-offer__old-price::before {
+  content: '';
+  position: absolute;
+  width: 68px;
+  height: 1px;
+  background-color: #CB0E0E;
+  top: 8px;
+  right: 0;
+  transform: rotate(17.1deg);
+}
+
+.special-offer__new-price {
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+}
+
+.special-offer__btn {
+  width: 100%;
+}
+
+.services {
+  margin-bottom: 200px;
+}
+
+.services__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.services__box-list {
+  width: 620px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.services__list {
+  margin: 25px 0;
+}
+
+.services__list-item {
+  list-style: none;
+  padding-left: 36px; 
+  position: relative;
+}
+
+.services__list-item::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 0;
+  top: 5px;
+}
+
+.services__description {
+  font-size: 12px;
+  line-height: 14px;
+  color: #E5E5E5;
+}
+
+.services__buttons {
+  width: 500px;
+  position: relative;
+}
+
+.services__btn {
+  width: 100%;
+}
+
+.services__btn + .services__btn {
+  margin-top: 50px;
+}
+
+.services__buttons::before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/astronaut.png);
+  right: 0;
+  top: -128px;
+  width: 192px;
+  height: 150px;
+}
+
+.slider {
+}
+.slider__inner {
+  margin-bottom: 50px;
+  border: 1px solid #FFFFFF;
+  padding: 100px 0;
+}
+.slider__box {
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+.slider__box-item {
+}
+
+.slider__box-img {
+  margin: 0 auto;
+}
+
+.slider__description {
+  font-family: 'spaceagecyrillic';
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.25em;
+  text-align: center;
+}
+
+.slider__arrow {
+  cursor: pointer;
+  z-index: 5;
+}
+
+.contacts {
+  background-color: #010203;
+  padding-bottom: 100px;
+}
+
+.contacts__title {
+  padding-bottom: 46px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__box {
+  max-width: 500px;
+}
+
+.contacts__box-text {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 80px;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__form-input {
+  background-color: #010203;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: 'sf-pro-display';
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px 0;
+} 
+
+.contacts__form-input::placeholder {
+  color: #fff;
+  font-family: 'sf-pro-display';
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contacts__form-btn {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.contacts__guarantees {
+  max-width: 500px;
+}
+
+.contacts__guarantees-text {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.contacts__guarantees-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
 }
